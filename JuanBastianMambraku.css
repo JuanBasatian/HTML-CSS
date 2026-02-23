@@ -1,1 +1,96 @@
- 
+/* Style untuk body dengan background gambar */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp3416319.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style untuk heading */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-top: 50px;
+}
+
+/* Style untuk paragraf */
+p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+/* Style untuk div dengan width 500px */
+div.ex1 {
+    width: 500px;
+    margin: 20px auto;
+    border: 3px solid #acc9cec3;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style untuk link-list (referensi gambar kedua) */
+.link-list {
+    width: 500px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #acc9cec3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.link-list a {
+    display: block;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s;
+}
+
+.link-list a:hover {
+    background-color: #f0f0f0;
+    padding-left: 25px;
+    color: #004499;
+}
+
+.link-list a:last-child {
+    border-bottom: none;
+}
+
+/* Style untuk link aktif */
+.link-list a:active {
+    color: #ff0000;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 600px) {
+    div.ex1, .link-list {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
