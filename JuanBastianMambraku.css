@@ -79,11 +79,80 @@ div.ex1 {
     color: #ff0000;
 }
 
+/* ===== TAMBAHAN BARU ===== */
+/* Container untuk semua teks */
+.text-container {
+    width: 800px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* Style untuk teks rata kiri - Warna Biru Muda */
+.text-left {
+    text-align: left;
+    color: #87CEEB; /* Biru muda Sky Blue */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #87CEEB;
+    border-radius: 0 10px 10px 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Style untuk teks rata tengah - Warna Hijau Muda */
+.text-center {
+    text-align: center;
+    color: #98FB98; /* Hijau muda Pale Green */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 5px solid #98FB98;
+    border-top: 5px solid #98FB98;
+    border-radius: 10px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Style untuk teks rata kanan - Warna Orange/Kuning */
+.text-right {
+    text-align: right;
+    color: #FFB347; /* Orange pastel */
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-right: 5px solid #FFB347;
+    border-radius: 10px 0 0 10px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
 /* Responsive untuk layar kecil */
 @media (max-width: 600px) {
     div.ex1, .link-list {
         width: 90%;
         margin: 10px auto;
+    }
+    
+    /* Tambahan responsive untuk text-container */
+    .text-container {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .text-left, .text-center, .text-right {
+        font-size: 16px;
+        padding: 10px;
     }
     
     h1 {
@@ -92,5 +161,12 @@ div.ex1 {
     
     p {
         font-size: 16px;
+    }
+}
+
+/* Untuk layar medium */
+@media (min-width: 601px) and (max-width: 900px) {
+    .text-container {
+        width: 90%;
     }
 }
